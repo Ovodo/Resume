@@ -89,10 +89,10 @@ const Binance = () => {
             Icon={<PhoneAndroidIcon className='text-binance_brightash' />}
             Text={"+234818983519"}
           />
-          <a href='https://ovdizzle.com'>
+          <a href='https://resume-six-kappa-53.vercel.app/'>
             <Small_header
               Icon={<LanguageTwoToneIcon className='text-binance_brightash' />}
-              Text={"ovdizzle.com"}
+              Text={"Ovodo.com"}
             />
           </a>
         </motion.div>
@@ -116,7 +116,7 @@ const Binance = () => {
           <a href=''>
             <Small_header
               Icon={<PlaceIcon className='text-binance_brightash' />}
-              Text={"Edo, Nigeria."}
+              Text={"Nigeria."}
             />
           </a>
         </motion.div>
