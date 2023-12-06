@@ -18,9 +18,9 @@ const Title_header = ({
       transition={{ delay: 1.2, duration: 2 }}
       className='w-full animate-pulse flex justify-center'
     >
-      <div className='flex justify-start w-[20vw] items-center  mb-3'>
+      <div className='flex justify-center  w-full  items-start space-x-2  mb-2'>
         <div className=''>{Icon}</div>
-        <Typography className='' ml={1} pb={2} variant='h4'>
+        <Typography className='' pb={2} variant='h4'>
           {Heading}
           <hr />
         </Typography>

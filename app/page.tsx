@@ -19,13 +19,17 @@ import Small_header from "../components/Small_header";
 import { LinkedIn } from "@mui/icons-material";
 import Title_header from "../components/Title_header";
 import { motion } from "framer-motion";
+import TipsAndUpdatesIcon from "@mui/icons-material/TipsAndUpdates";
+import Project from "@/components/Project";
+import { project } from "@/data/project";
+import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 
 const Binance = () => {
   const { Uniben, Iec, Junior } = resume2.Major.School;
 
   return (
     <Paper
-      sx={{ backgroundColor: "var(--binance_black)" }}
+      sx={{ width: "100%", backgroundColor: "var(--binance_black)" }}
       className='w-full border-2 h-full flex flex-col p-5  items-center '
       elevation={7}
     >
@@ -72,7 +76,7 @@ const Binance = () => {
       </div> */}
 
       {/* Contact info Box */}
-      <Box className='flex md:flex-row items-center px-10 bg-binance_ash shadow-sm shadow-binance_brightash  text-binance_white rounded-t-md pb-3 pt-1 justify-between w-full my-3'>
+      <Box className='flex md:flex-row items-center px-2 md:px-10 bg-binance_ash shadow-sm shadow-binance_brightash  text-binance_white rounded-t-md pb-3 pt-1 justify-between w-full my-3'>
         <motion.div
           animate={{ x: [500, 0] }}
           transition={{ type: "spring", stiffness: 500, duration: 1 }}
@@ -101,7 +105,7 @@ const Binance = () => {
           <a href='http://linkedin.com/in/ovodo/'>
             <Small_header
               Icon={<LinkedIn className='text-binance_brightash' />}
-              Text={"linkedin.com/in/ovodo/"}
+              Text={"linkedin.com/ovodo"}
             />
           </a>
           <a href='http://twitter.com/ovdizzle'>
@@ -129,8 +133,9 @@ const Binance = () => {
           {resume2 &&
             resume2.Major.skills
               .sort((a, b) => (a < b ? -1 : 1))
-              .map((item) => (
+              .map((item, index) => (
                 <Typography
+                  key={index.toString()}
                   // className={
                   //   item.includes("js") ||
                   //   item.includes("ss") ||
@@ -155,8 +160,16 @@ const Binance = () => {
         </div>
       </div>
 
+      {/* PROJECTS */}
+      <div className='work py-2 w-full pl-5 shadow-sm shadow-binance_brightash   mt-7 bg-binance_ash'>
+        <Title_header
+          Icon={<TipsAndUpdatesIcon className='text-binance_yellow ' />}
+          Heading={"Projects"}
+        />
+        <Project projects={project} />
+      </div>
       {/* WORK HISTORY */}
-      <div className='work pt-2 w-full pl-2  shadow-sm shadow-binance_brightash   mt-7 bg-binance_ash'>
+      <div className='work pt-2 w-full  pl-5 shadow-sm shadow-binance_brightash   mt-7 bg-binance_ash'>
         <Title_header
           Icon={<WorkHistoryIcon className='text-cyan-700' />}
           Heading={"Work Experience"}
@@ -173,6 +186,28 @@ const Binance = () => {
         />
         <div className=''>
           <Company Company={Uniben} bp={bp} />
+        </div>
+      </div>
+      {/* Volunteer */}
+
+      <div className='work mt-9'>
+        <Title_header
+          Icon={<VolunteerActivismIcon className='text-lovelypink' />}
+          Heading={"Volunteer"}
+        />
+        <div className=''>
+          <Company Company={Iec} bp={bp} />
+        </div>
+      </div>
+      {/* Certifications*/}
+
+      <div className='work mt-9'>
+        <Title_header
+          Icon={<SchoolIcon className='text-amber-500' />}
+          Heading={"Certifications"}
+        />
+        <div className=''>
+          <Company Company={Junior} bp={bp} />
         </div>
       </div>
 

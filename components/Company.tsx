@@ -1,9 +1,11 @@
+"use client";
 import React, { ReactNode } from "react";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import { Icon, Typography } from "@mui/material";
 import PlaceIcon from "@mui/icons-material/Place";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { SvgIconComponent } from "@mui/icons-material";
+import { useRouter } from "next/navigation";
 const Company = ({
   Company,
   bp,
@@ -18,11 +20,20 @@ const Company = ({
   animationDelay?: string;
 }) => {
   const { Name, Years, Role, Location, Description } = Company;
+  const router = useRouter();
   return (
-    <div>
-      <div className='flex  mb-5 w-full md:w-[95vw] items-center md:items-center justify-beween pb-5 '>
+    <div className='flex '>
+      <div className='flex flex-col md:flex-row   mb-5 w-full md:w-[95vw] items-center md:items-center justify-beween pb-5 '>
         <div className='years flex flex-col items-start  text-left w-full md:w-[35%]'>
-          <div className='header flex items-center gap-2 '>
+          <div
+            onClick={() => {
+              Name.includes("MORGAN") && router.push("/cert");
+            }}
+            className={`header ${
+              Name.includes("MORGAN") &&
+              "cursor-pointer underline  hover:text-cyan-700"
+            } flex items-center gap-2 `}
+          >
             {Icon}
             <Typography variant='h5'>{Name}</Typography>
           </div>
@@ -37,12 +48,12 @@ const Company = ({
             {Location}
           </Typography>
         </div>
-        <div className='items-start company_description w-full md:w-[60%]    flex flex-col'>
-          <div className='company pb-2'>
+        <div className='items-start  company_description w-full md:w-[60%]    flex flex-col'>
+          <div className='company  pb-2'>
             <Typography
               style={{ animationDelay: animationDelay }}
               variant='h5'
-              className='text-binance_green text-left animatedText
+              className='text-binance_green lg:whitespace-nowrap   text-left animatedText
             '
             >
               {Role}

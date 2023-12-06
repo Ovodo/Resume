@@ -26,13 +26,12 @@ export const bp = (size: number) => {
 const Job = ({ resume }: { resume: any }) => {
   const {
     Ruvena,
-    BandB,
     NPDC,
     Leadway,
     Studio,
     RuvenaPharmacy,
     Crestech,
-    Ovdizzle,
+    // Ovdizzle,
     projectTmax,
     NITI,
     TRICODE,
@@ -44,21 +43,18 @@ const Job = ({ resume }: { resume: any }) => {
       icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
     },
     {
-      data: NITI,
-      icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
-    },
-    {
       data: projectTmax,
       icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
     },
     {
-      data: Ovdizzle,
+      data: NITI,
       icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
     },
-    {
-      data: BandB,
-      icon: <FaPrescription className='text-red-600 ' size={23} />,
-    },
+    // {
+    //   data: Ovdizzle,
+    //   icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
+    // },
+
     {
       data: Ruvena,
       icon: <FaPrescription className='text-red-600 ' size={23} />,
@@ -87,9 +83,9 @@ const Job = ({ resume }: { resume: any }) => {
 
   return (
     <>
-      {companies.map((company: any, index: number) => (
+      {companies.map((company: any, index) => (
         <Company
-          key={index}
+          key={index.toString()}
           Company={company.data}
           bp={bp}
           Icon={company.icon}
