@@ -25,3 +25,43 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@keyframes writingEffect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.company_description .company .animatedText {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  width: 0; /* This will be animated to show the text */
+  animation: writingEffect 2.5s steps(40, end) forwards; /* 5s is the animation duration, adjust as needed */
+}
+
+.company_description .company .animatedText::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: blinkingCursor 1s infinite;
+  animation-duration: 2.5s;
+  opacity: 0.3;
+
+  animation-fill-mode: both; /* Ensures that the animation properties are retained after the animation ends */
+}
+
+@keyframes blinkingCursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
