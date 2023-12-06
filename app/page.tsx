@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Paper from "@mui/material/Paper";
 import { Typography, Box } from "@mui/material";
 import TwitterIcon from "@mui/icons-material/Twitter";
