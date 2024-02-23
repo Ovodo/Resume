@@ -1,11 +1,11 @@
 export const project = [
-  {
-    name: "Trader Keys",
-    about: "A Social defi platform with a private key custody system",
-    role: "Lead Software Developer",
-    stack: "NextJs, MongoDb, Typescript, Tailwind,Crypto,Aptos CLI",
-    link: "https://trader-keys.vercel.app/",
-  },
+  // {
+  //   name: "Trader Keys",
+  //   about: "A Social defi platform with a private key custody system",
+  //   role: "Lead Software Developer",
+  //   stack: "NextJs, MongoDb, Typescript, Tailwind,Crypto,Aptos CLI",
+  //   link: "https://trader-keys.vercel.app/",
+  // },
   {
     name: "The Bounty Hunter",
     about: "A Web game built on the Web3 blockchain technology",
@@ -21,14 +21,14 @@ export const project = [
     stack: "NextJs, MongoDb, Typescript, Tailwind,",
     link: "https://malikabdullahi.com",
   },
-  {
-    name: "Over Network",
-    about:
-      "An on-chain social network where users own and manage their accounts through NFTs and can post, comment, and like on the decentralized platform.",
-    role: "Smart Contract Developer",
-    stack: "Aptos CLI, Move, Rust,",
-    link: "https://network.overmind.xyz/",
-  },
+  // {
+  //   name: "Over Network",
+  //   about:
+  //     "An on-chain social network where users own and manage their accounts through NFTs and can post, comment, and like on the decentralized platform.",
+  //   role: "Smart Contract Developer",
+  //   stack: "Aptos CLI, Move, Rust,",
+  //   link: "https://network.overmind.xyz/",
+  // },
   {
     name: "Dawn of Design",
     about:
