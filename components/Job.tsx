@@ -31,13 +31,18 @@ const Job = ({ resume }: { resume: any }) => {
     Studio,
     RuvenaPharmacy,
     Crestech,
-    // Ovdizzle,
+    Ovdizzle,
     projectTmax,
     NITI,
     TRICODE,
+    LAZARUS,
   } = resume.Major.Work;
 
   const companies = [
+    {
+      data: LAZARUS,
+      icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
+    },
     {
       data: TRICODE,
       icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
@@ -47,13 +52,13 @@ const Job = ({ resume }: { resume: any }) => {
       icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
     },
     {
+      data: Ovdizzle,
+      icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
+    },
+    {
       data: NITI,
       icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
     },
-    // {
-    //   data: Ovdizzle,
-    //   icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
-    // },
 
     {
       data: Ruvena,

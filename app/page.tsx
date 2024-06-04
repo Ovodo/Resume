@@ -36,14 +36,14 @@ const Binance = () => {
 
       {/* Header Div */}
 
-      <motion.header
-        animate={{ y: [200, 0] }}
-        transition={{
-          type: "spring",
-          stiffness: 500,
-          duration: 1,
-          // delay: 0.5,
-        }}
+      <header
+        // animate={{ y: [200, 0] }}
+        // transition={{
+        //   type: "spring",
+        //   stiffness: 500,
+        //   duration: 1,
+        //   // delay: 0.5,
+        // }}
         className='HeaderBox flex flex-col mb-4 items-center'
       >
         <Typography
@@ -62,7 +62,7 @@ const Binance = () => {
           <FcBusinessman />
           Software Engineer
         </Typography>
-      </motion.header>
+      </header>
 
       {/* Summary Div */}
       {/* <div className='summary text-left'>
@@ -76,9 +76,9 @@ const Binance = () => {
 
       {/* Contact info Box */}
       <Box className='flex md:flex-row items-center px-2 md:px-10 bg-binance_ash shadow-sm shadow-binance_brightash  text-binance_white rounded-t-md pb-3 pt-1 justify-between w-full my-3'>
-        <motion.div
-          animate={{ x: [500, 0] }}
-          transition={{ type: "spring", stiffness: 500, duration: 1 }}
+        <div
+          // animate={{ x: [500, 0] }}
+          // transition={{ type: "spring", stiffness: 500, duration: 1 }}
           className='max-w-max self-end '
         >
           <Small_header
@@ -95,10 +95,10 @@ const Binance = () => {
               Text={"Ovodo.com"}
             />
           </a>
-        </motion.div>
-        <motion.div
-          animate={{ x: [-500, 0] }}
-          transition={{ type: "spring", stiffness: 500, duration: 1 }}
+        </div>
+        <div
+          // animate={{ x: [-500, 0] }}
+          // transition={{ type: "spring", stiffness: 500, duration: 1 }}
           className='max-w-max self-end '
         >
           <a href='http://linkedin.com/in/ovodo/'>
@@ -119,7 +119,7 @@ const Binance = () => {
               Text={"Nigeria."}
             />
           </a>
-        </motion.div>
+        </div>
       </Box>
 
       {/* Skills */}

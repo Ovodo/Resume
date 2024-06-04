@@ -1,3 +1,4 @@
+import Job from "@/components/Job";
 import { Engineering } from "@mui/icons-material";
 
 // interface Resume  {
@@ -14,86 +15,83 @@ export const resume2 = {
   Major: {
     skills: [
       "Nodejs",
-      "React",
+      "Nextjs",
       "JavaScript",
       "Typescript",
       "Analysis",
       "Tailwind CSS",
       "PostgreSQL",
-      "Leadership",
       "Teamwork",
       "React Native",
       "Debugging",
       "Move",
-      "Rust",
+      "Git",
     ],
     // summary:
     // "Dynamic, versatile and result-driven individual with over 8 years hands-on experience with 4+ in multinantional companies worth over 100 million naira. Proficient knowledge and use of a variety of computer software in the Tech and Engineering space thanks to a special ability to Comprehend and grasp really fast.",
     Work: {
+      LAZARUS: {
+        Name: "Lazarus Network",
+        Location: "West Park, Florida",
+        Years: "March 2024 - May 2024",
+        Role: "Senior Front-End Engineer",
+        Description: [
+          "Develop premium user interfaces from the design team using Nextjs.",
+          "Develop and manage a comprehensive Chrome extension encompassing a Web3 wallet and a review system.",
+          "Tutor and help junior engineers on how to go about solving problems encountered",
+        ],
+      },
       TRICODE: {
         Name: "TRICODE Developers Network",
         Location: "Remote",
         Years: "April 2023- present",
-        Role: "Head of Developer Growth and Engagemment",
+        Role: "Technical Lead",
         Description: [
-          "Lead the end-to-end development process for mobile and web applications, ensuring timely delivery and high-quality results.",
-          "Address feedback and concerns, fostering a positive and productive work environment for all team members.",
-          "Negotiate with clients to secure mutually beneficial agreements and establish strong, long-term partnerships.",
-          "Implement agile and Scrum methodologies, including continuous integration, to ensure client satisfaction with our products and services.",
+          "Collaborate with product managers and UX designers to implement innovative solutions that enhance user experiences.",
+          "Utilize React, JavaScript, HTML, and CSS to create prototypes and wireframes for enterprise web applications.",
+          "Create and manage API's for the backend structure of mobile applications and web platforms.",
         ],
       },
 
       projectTmax: {
         Name: "Project T-max",
         Location: "Benin, Nigeria",
-        Years: "Year till Mar 2023",
+        Years: "Jan 2023 - Mar 2023",
         Role: "Web Development Facilitator",
         Description: [
-          "Create a course outline for students to follow during the program.",
-          "Train students in web development with various software and computer languages such as:- Html, CSS, Mongo DB, Nodejs, JavaScript, and React.",
-          "Advise management on the best and most efficient equipment to purchase.",
+          "Designed and delivered web development training programs covering HTML, CSS, MongoDB, Node.js, JavaScript, and React.",
+          "Advised management on the adoption of efficient development tools and technologies.",
+        ],
+      },
+      Ovdizzle: {
+        Name: "Ovdizzle Inc",
+        Location: "Remote",
+        Years: "2022 - present",
+        Role: "Software Engineer",
+        Description: [
+          "React, Material UI, Redux, and Tailwind CSS were utilized to develop several responsive functional UI components.",
+          ,
+          "Enabled web3 authentication, stored 50+ users in global states using Context API concepts and wrote smart contracts for handling purchases and sales on the website",
+          ,
+          "Built Rest API to  effectively manage uploading, transmission, and downloading of content within client pages and servers.",
         ],
       },
       NITI: {
         Name: "NITI",
-        Location: "Remote",
-        Years: "Jan 2021 - present",
-        Role: "Technical Research Analyst | Web Developer",
+        Location: "Warri, Nigeria",
+        Years: "Jan 2021 - Dec 2022",
+        Role: "Full-Stack Developer",
         Description: [
-          "Scrutinize projects to filter  possible investment opportunities and patnerships with good risk to reward ratios",
-          "Working closely with the developoment team,udating them on current and most effective tools in the industry.",
-          "Support in the development process for client and server side application.",
+          "Assisted in creating high-quality user interfaces based on designs provided by the UX team.",
+          "Updated the development team on current industry tools and best practices.",
+          "Supported the development of the brand applications,factoring in best practices for database management and API configuration",
         ],
       },
-      // Ovdizzle: {
-      //   Name: "Ovdizzle Inc",
-      //   Location: "Remote",
-      //   Years: "2022 - present",
-      //   Role: "Software Engineer",
-      //   Description: [
-      //     "React, Material UI, Redux, and Tailwind CSS were utilized to develop several responsive functional UI components.",
-      //     ,
-      //     "Enabled web3 authentication, stored 50+ users in global states using Context API concepts and wrote smart contracts for handling purchases and sales on the website",
-      //     ,
-      //     "Built Rest API to  effectively manage uploading, transmission, and downloading of content within client pages and servers.",
-      //   ],
-      // },
-      // BandB: {
-      //   Name: "BandBindex",
-      //   Location: "Remote",
-      //   Years: "2021 - present",
-      //   Role: "Co-Founder / CTO",
-      //   Description: [
-      //     "Developed the UI and backend API using nextjs and google sheets for the Index platform.",
-      //     "Helped in creating technical documentation and parameters for the inidicators used for the insight.",
-      //     "Performed stress and interface testing on the platform to ensure optimum performance.",
-      //     "Responsible for managing market research and development.",
-      //   ],
-      // },
+
       Ruvena: {
         Name: "Ruvena Pharmacy and Stores ",
         Location: "Benin, Nigeria",
-        Years: "2020 -2022",
+        Years: "Jan 2020 - Jan 2021",
         Role: "Growth Marketing Manager",
         Description: [
           "Collaborated with Sales Representatives, Pharmacies, and Medical Laboratories to increase the availability of products by 25% and benefit from Profit Sharing through referral bonuses.",

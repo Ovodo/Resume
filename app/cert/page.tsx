@@ -1,5 +1,8 @@
 import React from "react";
 
+let pint3d = 2;
+let lsl = ++pint3d;
+
 const Page = () => {
   return (
     <div className='w-screen h-screen'>
