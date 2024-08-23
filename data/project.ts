@@ -16,8 +16,7 @@ export const project = [
   },
   {
     name: "Dr.Malik's Portfolio Web App",
-    about:
-      "A portfolio website to showcase Dr.Malik's expertise. A well seasoned and professional consultant",
+    about: "A portfolio website to showcase Dr.Malik's expertise.",
     role: "Developer Relations Manager",
     stack: "NextJs, MongoDb, Typescript, Tailwind,",
     link: "https://malikabdullahi.com",
@@ -33,7 +32,7 @@ export const project = [
   {
     name: "Dawn of Design",
     about:
-      "A web application that is an automated on-chain gift-giving Dapp.The platform can be used to create gifts that hold APT coins that the recipient can open on their birthday.",
+      "An automated on-chain gift-giving Dapp. Can be used to create gifts that hold APT coins that  recipient's can open on their birthdays.",
     role: "Front End Developer",
     stack: "NextJs,Typescript,Aptos API, Shadcn/ui, Tailwind CSS",
     link: "https://birthday-bot-fe-reference.vercel.app/",

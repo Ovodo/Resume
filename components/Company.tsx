@@ -22,7 +22,7 @@ const Company = ({
   const { Name, Years, Role, Location, Description } = Company;
   const router = useRouter();
   return (
-    <div className='flex '>
+    <div className='flex my-6 '>
       <div className='flex flex-col md:flex-row   mb-5 w-full md:w-[95vw] items-center md:items-center justify-beween pb-5 '>
         <div className='years flex flex-col items-start  text-left w-full md:w-[35%]'>
           <div

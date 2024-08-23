@@ -24,7 +24,9 @@ import { project } from "@/data/project";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 
 const Binance = () => {
-  const { Uniben, Iec, Junior } = resume2.Major.School;
+  const { Uniben } = resume2.Major.School;
+  const { JPMorgan } = resume2.Major.Certifications;
+  const { AmericaWindowSpace, AmericaWindowSpaces } = resume2.Major.Volunteer;
 
   return (
     <Paper
@@ -65,14 +67,14 @@ const Binance = () => {
       </header>
 
       {/* Summary Div */}
-      {/* <div className='summary text-left'>
+      <div className='summary py-6 text-left'>
         <Typography
           variant='body2'
           sx={{ ml: 1, letterSpacing: 0, wordSpacing: 1 }}
         >
           {resume2.Major.summary}
         </Typography>
-      </div> */}
+      </div>
 
       {/* Contact info Box */}
       <Box className='flex md:flex-row items-center px-2 md:px-10 bg-binance_ash shadow-sm shadow-binance_brightash  text-binance_white rounded-t-md pb-3 pt-1 justify-between w-full my-3'>
@@ -128,13 +130,14 @@ const Binance = () => {
           Icon={<IoExtensionPuzzle size={23} className='text-cyan-700 ' />}
           Heading={"Skills"}
         />
-        <div className='grid grid-cols-3 sm:grid-cols-4 w-full md:grid-cols-5 gap-x-3 md:gap-x-32'>
+        <div className='grid grid-cols-3 sm:grid-cols-4 w-full md:grid-cols-5 gap-x-3 md:gap-x-24'>
           {resume2 &&
             resume2.Major.skills
               .sort((a, b) => (a < b ? -1 : 1))
               .map((item, index) => (
                 <Typography
                   key={index.toString()}
+                  className='whitespace-nowrap'
                   // className={
                   //   item.includes("js") ||
                   //   item.includes("ss") ||
@@ -160,15 +163,15 @@ const Binance = () => {
       </div>
 
       {/* PROJECTS */}
-      <div className='work py-2 w-full pl-5 shadow-sm shadow-binance_brightash   mt-7 bg-binance_ash'>
+      {/* <div className='work py-2 w-full pl-5 shadow-sm shadow-binance_brightash   mt-7 bg-binance_ash'>
         <Title_header
           Icon={<TipsAndUpdatesIcon className='text-binance_yellow ' />}
           Heading={"Projects"}
         />
         <Project projects={project} />
-      </div>
+      </div> */}
       {/* WORK HISTORY */}
-      <div className='work pt-2 w-full  pl-5 shadow-sm shadow-binance_brightash   mt-7 bg-binance_ash'>
+      <div className='w-full  pl-5 shadow-sm  py-6   mt-7 '>
         <Title_header
           Icon={<WorkHistoryIcon className='text-cyan-700' />}
           Heading={"Work Experience"}
@@ -195,7 +198,8 @@ const Binance = () => {
           Heading={"Volunteer"}
         />
         <div className=''>
-          <Company Company={Iec} bp={bp} />
+          <Company Company={AmericaWindowSpace} bp={bp} />
+          <Company Company={AmericaWindowSpaces} bp={bp} />
         </div>
       </div>
       {/* Certifications*/}
@@ -206,7 +210,7 @@ const Binance = () => {
           Heading={"Certifications"}
         />
         <div className=''>
-          <Company Company={Junior} bp={bp} />
+          <Company Company={JPMorgan} bp={bp} />
         </div>
       </div>
 

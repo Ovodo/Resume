@@ -54,7 +54,6 @@ body {
 .company_description .company .animatedText::after {
   content: "|";
   position: absolute;
-  /* left: 0; */
   animation: blinkingCursor 1s infinite;
   animation-duration: 2.5s;
   opacity: 0.3;

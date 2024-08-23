@@ -24,37 +24,30 @@ export const bp = (size: number) => {
 };
 
 const Job = ({ resume }: { resume: any }) => {
-  const {
-    Ruvena,
-    NPDC,
-    Leadway,
-    Studio,
-    RuvenaPharmacy,
-    Crestech,
-    Ovdizzle,
-    projectTmax,
-    NITI,
-    TRICODE,
-    LAZARUS,
-  } = resume.Major.Work;
+  const { Ruvena, projectTmax, NITI, TRICODE, LAZARUS, Overmind } =
+    resume.Major.Work;
 
   const companies = [
+    {
+      data: TRICODE,
+      icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
+    },
     {
       data: LAZARUS,
       icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
     },
     {
-      data: TRICODE,
+      data: Overmind,
       icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
     },
     {
       data: projectTmax,
       icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
     },
-    {
-      data: Ovdizzle,
-      icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
-    },
+    // {
+    //   data: Ovdizzle,
+    //   icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
+    // },
     {
       data: NITI,
       icon: <LaptopIcon className='text-blue-600' fontSize='medium' />,
@@ -64,26 +57,26 @@ const Job = ({ resume }: { resume: any }) => {
       data: Ruvena,
       icon: <FaPrescription className='text-red-600 ' size={23} />,
     },
-    {
-      data: NPDC,
-      icon: <Engineering className='text-blue-600' fontSize='medium' />,
-    },
-    {
-      data: Leadway,
-      icon: <AccountBalanceIcon className='text-green-600' fontSize='medium' />,
-    },
-    {
-      data: Studio,
-      icon: <MovieIcon className='text-amber-600' fontSize='medium' />,
-    },
-    {
-      data: RuvenaPharmacy,
-      icon: <FaPrescription className='text-red-600' size={23} />,
-    },
-    {
-      data: Crestech,
-      icon: <Engineering className='text-blue-600' fontSize='medium' />,
-    },
+    // {
+    //   data: NPDC,
+    //   icon: <Engineering className='text-blue-600' fontSize='medium' />,
+    // },
+    // {
+    //   data: Leadway,
+    //   icon: <AccountBalanceIcon className='text-green-600' fontSize='medium' />,
+    // },
+    // {
+    //   data: Studio,
+    //   icon: <MovieIcon className='text-amber-600' fontSize='medium' />,
+    // },
+    // {
+    //   data: RuvenaPharmacy,
+    //   icon: <FaPrescription className='text-red-600' size={23} />,
+    // },
+    // {
+    //   data: Crestech,
+    //   icon: <Engineering className='text-blue-600' fontSize='medium' />,
+    // },
   ];
 
   return (
